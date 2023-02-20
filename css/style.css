@@ -729,6 +729,7 @@
   background-color: black;
   color: white;
   display: flex;
+  flex-direction: column;
 }
 
 .container-footer {
@@ -737,6 +738,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid gray;
 }
 
 .footer .titulo-footer {
@@ -773,4 +775,9 @@
 
 .footer .contact .redes a:hover {
   color: white;
+}
+
+.derechos {
+  text-align: center;
+  padding: 11px;
 }
