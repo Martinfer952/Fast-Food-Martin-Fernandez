@@ -788,6 +788,14 @@ section .card .image img {
   color: rgb(243, 117, 0) !important;
 }
 
+.swiper-pagination {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 50px !important;
+  position: static !important;
+}
+
 .swiper-pagination-bullet-active {
   background-color: rgb(243, 117, 0) !important;
 }
