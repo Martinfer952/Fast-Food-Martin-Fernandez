@@ -1,7 +1,9 @@
 /////////////// BOTONES NAV //////////////////
 let searchForm = document.querySelector(".search-form");
+let searchBox = document.getElementById("search-box");
 
 document.querySelector("#search-btn").onclick = () => {
+  searchBox.focus();
   searchForm.classList.toggle("active");
   shoppingCart.classList.remove("active");
   navbar.classList.remove("active");
@@ -37,6 +39,10 @@ window.onscroll = () => {
   shoppingCart.classList.remove("active");
   navbar.classList.remove("active");
 };
+
+function cerrar() {
+  searchForm.classList.remove("active");
+  shoppingCart.classList.remove("active");
 
 /////////////// BOTONES ICONOS SECCION ARME SU COMBO //////////////////
 let boxPizzas = document.querySelector(".pizzasContainer");
