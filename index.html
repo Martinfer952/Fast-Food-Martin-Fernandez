@@ -50,10 +50,10 @@
           </div>
           <!-------- Boton search y carrito -------->
           <form action="" class="search-form">
-            <input type="search" id="search-box" placeholder="Buscar aqui..." />
+            <input type="search" id="search-box" onblur="cerrar(this);" placeholder="Buscar aqui..." />
             <label for="search-box" class="fas fa-search"></label>
           </form>
-          <div class="shopping-cart">
+          <div class="shopping-cart" tabindex="1" onblur="cerrar(this);">
             <i class="fa-solid fa-xmark"></i>
             <h3 class="heading">Mi Carrito</h3>
             <div class="box-scroll tbody"></div>
