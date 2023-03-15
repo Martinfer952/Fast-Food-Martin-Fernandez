@@ -29,11 +29,11 @@
               <h3>Logo Name</h3>
             </div>
           </a>
-          <div class="nav-bar">
+          <div class="nav-bar" tabindex="2">
             <ul>
               <li><a href="#home">Home</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#menu">Menú</a></li>
+              <li><a href="#menu">Tabla</a></li>
+              <li><a href="#comidas">Menú</a></li>
               <li><a href="#testimonios">Testimonios</a></li>
               <li><a href="#footer">Contácto</a></li>
             </ul>
@@ -50,10 +50,10 @@
           </div>
           <!-------- Boton search y carrito -------->
           <form action="" class="search-form">
-            <input type="search" id="search-box" placeholder="Buscar aqui..." />
+            <input type="search" id="search-box" onblur="cerrar(this);" placeholder="Buscar aqui..." />
             <label for="search-box" class="fas fa-search"></label>
           </form>
-          <div class="shopping-cart">
+          <div class="shopping-cart" tabindex="1" onblur="cerrar(this);">
             <i class="fa-solid fa-xmark"></i>
             <h3 class="heading">Mi Carrito</h3>
             <div class="box-scroll tbody"></div>
@@ -71,8 +71,7 @@
         <div class="contenido">
           <h1 class="heading-hero">¡Pedí tu combo y disfruta!</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
-            optio illum accusamus expedita autem doloremque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolorem mollitia amet nostrum vel nam corrupti ipsa tempore fuga minus.
           </p>
           <a class="btn" href="#"
             >Ordenar ahora <i class="fa-solid arrow fa-arrow-right"></i
@@ -94,32 +93,29 @@
     <!------------------- INICIO TABLA GRID ------------------->
     <!-------------------------------------------------------->
     <section class="tablas" id="menu">
-      <div class="container">
         <div class="contenido">
-          <a class="burger box-caracter" data-aos="fade-right"  href="#">
+          <a class="burger box-caracter"  href="#">
             Hamburguesas <br /><span>Simplemente perfectas</span>
           </a>
-          <a class="pizzas box-caracter" data-aos="fade-left" href="#"
+          <a class="pizzas box-caracter" href="#"
             >Pizzas <br /><span>Únicas en el mundo</span></a
           >
-          <a class="carne box-caracter" data-aos="fade-left" href="#"
+          <a class="carne box-caracter" href="#"
             >Cena <br /><span>Para deleitar</span></a
           >
         </div>
-      </div>
     </section>
 
     <!-------------------- INICIO COMIDAS -------------------->
     <!-------------------------------------------------------->
     <section class="comidas" id="comidas">
-      <div class="contenido" data-aos="fade-up">
+      <div class="contenido">
         <div class="titulo-comidas-box">
           <h2>¡LAS MÁS PEDIDAS!</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, illo tempora eligendi minus quae est asperiores dignissimos tenetur labore consequatur!
+          </p>
         </div>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-          numquam assumenda totam animi. Illum, labore numquam!
-        </p>
         <div class="iconos-comida">
           <i class="fa-solid fa-burger color" id="burger-btn"></i>
           <i class="fa-solid fa-pizza-slice" id="pizza-btn"></i>
@@ -131,72 +127,84 @@
         <div class="swiper-wrapper content">
           <div class="swiper-slide box">
               <img class="box-img" src="img/comidas/hamburguesa-1.jpg" alt="" />
+              <div class="box_card_text">
               <h3 class="card-tittle">Hamburguesa Clásica</h3>
               <p class="parrafo-box">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Doloribus animi, beatae consequuntur reiciendis amet aut!
               </p>
               <h3 class="precio">$500</h3>
+            </div>
               <button class="btnAgregar">
                 Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
               </button>
           </div>
           <div class="swiper-slide box">
               <img class="box-img" src="img/comidas/hamburguesa-2.jpg" alt="" />
-              <h3 class="card-tittle">Hamburguesa Bacon</h3>
-              <p class="parrafo-box">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Doloribus animi, beatae consequuntur reiciendis amet aut!
-              </p>
-              <h3 class="precio">$500</h3>
+              <div class="box_card_text">
+                <h3 class="card-tittle">Hamburguesa Bacon</h3>
+                <p class="parrafo-box">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Doloribus animi, beatae consequuntur reiciendis amet aut!
+                </p>
+                <h3 class="precio">$500</h3>
+              </div>
               <button class="btnAgregar">
                 Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
               </button>
           </div>
           <div class="swiper-slide box">
               <img class="box-img" src="img/comidas/hamburguesa-3.jpg" alt="" />
-              <h3 class="card-tittle">Hamburguesa Huevo</h3>
-              <p class="parrafo-box">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Doloribus animi, beatae consequuntur reiciendis amet aut!
-              </p>
-              <h3 class="precio">$500</h3>
+              <div class="box_card_text">
+                <h3 class="card-tittle">Hamburguesa Huevo</h3>
+                <p class="parrafo-box">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Doloribus animi, beatae consequuntur reiciendis amet aut!
+                </p>
+                <h3 class="precio">$500</h3>
+              </div>
               <button class="btnAgregar">
                 Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
               </button>
           </div>
           <div class="swiper-slide box">
               <img class="box-img" src="img/comidas/hamburguesa-1.jpg" alt="" />
-              <h3 class="card-tittle">Hamburguesa Clásica</h3>
-              <p class="parrafo-box">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Doloribus animi, beatae consequuntur reiciendis amet aut!
-              </p>
-              <h3 class="precio">$500</h3>
+              <div class="box_card_text">
+                <h3 class="card-tittle">Hamburguesa Clásica</h3>
+                <p class="parrafo-box">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Doloribus animi, beatae consequuntur reiciendis amet aut!
+                </p>
+                <h3 class="precio">$500</h3>
+              </div>
               <button class="btnAgregar">
                 Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
               </button>
           </div>
           <div class="swiper-slide box">
               <img class="box-img" src="img/comidas/hamburguesa-2.jpg" alt="" />
-              <h3 class="card-tittle">Hamburguesa Bacon</h3>
-              <p class="parrafo-box">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Doloribus animi, beatae consequuntur reiciendis amet aut!
-              </p>
-              <h3 class="precio">$500</h3>
+              <div class="box_card_text">
+                <h3 class="card-tittle">Hamburguesa Bacon</h3>
+                <p class="parrafo-box">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Doloribus animi, beatae consequuntur reiciendis amet aut!
+                </p>
+                <h3 class="precio">$500</h3>
+              </div>
               <button class="btnAgregar">
                 Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
               </button>
           </div>
           <div class="swiper-slide box">
               <img class="box-img" src="img/comidas/hamburguesa-3.jpg" alt="" />
-              <h3 class="card-tittle">Hamburguesa Huevo</h3>
-              <p class="parrafo-box">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Doloribus animi, beatae consequuntur reiciendis amet aut!
-              </p>
-              <h3 class="precio">$500</h3>
+              <div class="box_card_text">
+                <h3 class="card-tittle">Hamburguesa Huevo</h3>
+                <p class="parrafo-box">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Doloribus animi, beatae consequuntur reiciendis amet aut!
+                </p>
+                <h3 class="precio">$500</h3>
+              </div>
               <button class="btnAgregar">
                 Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
               </button>
@@ -212,72 +220,86 @@
           <div class="swiper-wrapper content ">
            <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/pizza-1.webp" alt="" />
-            <h3 class="card-tittle">Pizza Jamón & Tomate</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">Pizza Jamón & Tomate</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$1000</h3>
+            </div>
+
+            
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
            </div>
            <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/pizza-2.webp" alt="" />
-            <h3 class="card-tittle">Pizza 4 Estaciones</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">Pizza 4 Estaciones</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$1000</h3>
+            </div>
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
             </div>
             <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/pizza-3.webp" alt="" />
-            <h3 class="card-tittle">Pizza Jamón & Rucula</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">Pizza Jamón & Rucula</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$1000</h3>
+            </div>
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
            </div>
            <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/pizza-1.webp" alt="" />
-            <h3 class="card-tittle">Pizza Jamón & Tomate</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">Pizza Jamón & Tomate</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$1000</h3>
+            </div>
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
            </div>
            <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/pizza-2.webp" alt="" />
-            <h3 class="card-tittle">Pizza 4 Estaciones</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">Pizza 4 Estaciones</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$1000</h3>
+            </div>
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
             </div>
             <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/pizza-3.webp" alt="" />
-            <h3 class="card-tittle">Pizza Jamón & Rucula</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">Pizza Jamón & Rucula</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$1000</h3>
+            </div>
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
@@ -293,72 +315,86 @@
           <div class="swiper-wrapper content">
            <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/bebida-1.jpg" alt="" />
-            <h3 class="card-tittle">CocaCola 330ml</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">CocaCola 330ml</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$200</h3>
+            </div>
+
+            
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
             </div>
            <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/bebida-2.jpg" alt="" />
-            <h3 class="card-tittle">SevenUp 330ml</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">SevenUp 330ml</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$200</h3>
+            </div>
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
            </div>
             <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/bebida-3.jpg" alt="" />
-            <h3 class="card-tittle">Pepsi 330ml</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">Pepsi 330ml</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$200</h3>
+            </div>
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
             </div>
            <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/bebida-1.jpg" alt="" />
-            <h3 class="card-tittle">CocaCola 330ml</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">CocaCola 330ml</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$200</h3>
+            </div>
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
             </div>
            <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/bebida-2.jpg" alt="" />
-            <h3 class="card-tittle">SevenUp 330ml</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">SevenUp 330ml</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$200</h3>
+            </div>
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
            </div>
             <div class="swiper-slide box">
             <img class="box-img" src="img/comidas/bebida-3.jpg" alt="" />
-            <h3 class="card-tittle">Pepsi 330ml</h3>
+            <div class="box_card_text">
+              <h3 class="card-tittle">Pepsi 330ml</h3>
             <p class="parrafo-box">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Doloribus animi, beatae consequuntur reiciendis amet aut!
             </p>
             <h3 class="precio">$200</h3>
+            </div>
             <button class="btnAgregar">
               Agregar al carrito <i class="fa-solid fa-cart-shopping"></i>
             </button>
@@ -394,11 +430,6 @@
                 <img src="img/testimonios/testimonio-1.jpg" alt="" />
               </div>
 
-              <div class="media-icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-              </div>
 
               <div class="name-profession">
                 <span class="name">Robert Jhonson</span>
@@ -424,11 +455,6 @@
                 <img src="img/testimonios/testimonio-2.jpg" alt="" />
               </div>
 
-              <div class="media-icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-              </div>
 
               <div class="name-profession">
                 <span class="name">Jennifer Smith</span>
@@ -452,12 +478,6 @@
             <div class="card-content">
               <div class="image">
                 <img src="img/testimonios/testimonio-3.jpg" alt="" />
-              </div>
-
-              <div class="media-icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
               </div>
 
               <div class="name-profession">
@@ -484,12 +504,6 @@
                 <img src="img/testimonios/testimonio-1.jpg" alt="" />
               </div>
 
-              <div class="media-icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-              </div>
-
               <div class="name-profession">
                 <span class="name">Robert Jhonson</span>
                 <span class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste, dignissimos vel accusamus dolores laborum.</span>
@@ -514,12 +528,6 @@
                 <img src="img/testimonios/testimonio-2.jpg" alt="" />
               </div>
 
-              <div class="media-icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-              </div>
-
               <div class="name-profession">
                 <span class="name">Jennifer Smith</span>
                 <span class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste, dignissimos vel accusamus dolores laborum.</span>
@@ -542,12 +550,6 @@
             <div class="card-content">
               <div class="image">
                 <img src="img/testimonios/testimonio-3.jpg" alt="" />
-              </div>
-
-              <div class="media-icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
               </div>
 
               <div class="name-profession">
@@ -584,14 +586,14 @@
     <!-------------------------------------------------------->
     <section class="promocion">
       <div class="container-promo">
-        <div class="text-promocion" data-aos="fade-left">
+        <div class="text-promocion">
           <p>por 10% de descuento</p>
           <h3>
             obtener código <br />
             promocional
           </h3>
         </div>
-        <div class="email-promocion" data-aos="fade-left">
+        <div class="email-promocion">
           <input
             type="email"
             name="email"
@@ -670,10 +672,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-      AOS.init({
-        duration: 1500,
-        once: true
-      });
 
       function swiperBucle() {
       var swiper = new Swiper(".mySwiper", {
@@ -682,10 +680,6 @@
         slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -700,7 +694,7 @@
             spaceBetween: 10,
             slidesPerGroup: 1,
           },
-          500: {
+          685: {
             slidesPerView: 2,
             spaceBetween: 20,
             slidesPerGroup: 2,
