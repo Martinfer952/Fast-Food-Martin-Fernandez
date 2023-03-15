@@ -1,13 +1,18 @@
 /*********************** MEDIA QUERIES ***********************/
 /*************************************************************/
 
-@media (max-width: 865px) {
-  .tablas .container .contenido {
-    grid-template-columns: 160px 160px 160px 160px;
-    grid-template-rows: 200px 200px;
+@media (max-width: 960px) {
+  .tablas .contenido {
+    grid-template-columns: 1fr;
+    grid-template-rows: 255px 180px 180px;
     grid-template-areas:
-      "burger burger pizzas pizzas"
-      "burger burger carne carne";
+      "burger"
+      "pizzas"
+      "carne";
+    height: auto;
+  }
+  .burger {
+    background-size: 110%;
   }
 }
 
@@ -30,18 +35,7 @@
   }
   .footer {
     font-size: 0.8rem;
-  }
-}
-
-@media (max-width: 715px) {
-  .tablas .container .contenido {
-    width: 85vw;
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px 180px 180px;
-    grid-template-areas:
-      "burger"
-      "pizzas"
-      "carne";
+    padding-inline: 2rem;
   }
 }
 
@@ -74,6 +68,10 @@
     display: block;
   }
 
+  .nav .container .nav-iner .iconos i {
+    padding-inline: 0.7rem;
+  }
+
   #menu-btn {
     display: flex;
   }
@@ -95,6 +93,14 @@
     right: 60px;
     top: 34px;
   }
+
+  .hero .container {
+    padding: 2rem;
+  }
+
+  .tablas {
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -105,7 +111,7 @@
     font-size: 80%;
   }
 
-  .tablas .container .contenido span {
+  .tablas .contenido span {
     font-size: 1.2rem;
   }
   .comidas .contenido p,
@@ -125,7 +131,7 @@
     margin-top: 0;
   }
   .promocion {
-    height: 15rem;
+    padding-inline: 2rem;
   }
   .container-promo {
     width: auto;
@@ -135,6 +141,12 @@
   }
   .promocion .text-promocion h3 {
     line-height: 1.5rem;
+  }
+  .promocion .email-promocion {
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
   .promocion .email-promocion input {
     width: 13rem;
@@ -147,5 +159,14 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media (max-width: 455px) {
+  .comidas {
+    padding-inline: 2rem;
+  }
+  .testimonios {
+    padding-inline: 2rem;
   }
 }
